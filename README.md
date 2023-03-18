@@ -1,7 +1,7 @@
 My Dot Files
 ============
 
-This is a collection of dot files that I use on my Linux machine. These files contain my personal configurations for various applications and utilities, such as my shell (bash), text editor (Vim), and window manager (i3).
+This is a collection of dot files that I use on my Linux machine. These files contain my personal configurations for various applications and utilities, such as my shell (bash) and text editor (Vim).
 
 Installation
 ------------
