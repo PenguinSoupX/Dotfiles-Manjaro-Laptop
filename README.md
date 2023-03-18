@@ -10,15 +10,13 @@ To use these dot files on your own machine, follow these steps:
 
 1.  Clone this repository to your home directory:
 
-bashCopy code
 
-`git clone https://github.com/username/dotfiles.git ~/dotfiles`
+    `git clone https://github.com/PenguinSoupX/Dotfiles-Manjaro-Laptop.git ~/dotfiles`
 
-1.  Copy the contents of the `dotfiles` directory to your home directory:
+2.  Copy the contents of the `dotfiles` directory to your home directory:
 
-javascriptCopy code
 
-`cp -r ~/dotfiles/* ~/`
+    `cp -r ~/dotfiles/* ~/`
 
 This will copy all the dot files to your home directory and maintain the same folder structure.
 
