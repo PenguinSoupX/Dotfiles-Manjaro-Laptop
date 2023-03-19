@@ -1,0 +1,40 @@
+# Output directory for downloaded files
+-o ~/Downloads/yt-dlp/%(title)s.%(ext)s
+
+# Set default video format to best
+# -f best
+
+# Download the best 720p video
+-f 'bestvideo[height<=720]+bestaudio/best'
+
+# Set output file format to mp4
+--merge-output-format mp4
+
+# Download subtitles and embed them in the video
+--embed-subs
+
+# Set default language for subtitles to English
+--sub-lang en
+
+# Ignore errors and continue downloads if possible
+--ignore-errors
+--continue
+
+# Add metadata to downloaded files
+--embed-metadata      # Embed metadata information
+--embed-thumbnail    # Embed thumbnail image
+# --embed-chapters   # Embed chapter information (currently commented out)
+
+# Set user-agent to avoid detection
+# --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+# Limit download speed to 1 MB/s
+# --limit-rate 1M
+
+# Show progress bar and verbose output
+--progress
+--verbose
+
+# Enable SponsorBlock support
+--sponsorblock-mark all      # Mark all sponsor segments for removal
+--sponsorblock-remove sponsor,outro # Remove all sponsor segments
