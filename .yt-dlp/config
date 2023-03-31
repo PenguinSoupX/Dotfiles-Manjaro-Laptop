@@ -8,7 +8,7 @@
 -f 'bestvideo[height<=720]+bestaudio/best'
 
 # Set output file format to mp4
---merge-output-format mp4
+--merge-output-format mkv
 
 # Download subtitles and embed them in the video
 --embed-subs
@@ -23,7 +23,7 @@
 # Add metadata to downloaded files
 --embed-metadata      # Embed metadata information
 --embed-thumbnail    # Embed thumbnail image
-# --embed-chapters   # Embed chapter information (currently commented out)
+--embed-chapters       # Embed chapter information
 
 # Set user-agent to avoid detection
 # --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
@@ -38,3 +38,4 @@
 # Enable SponsorBlock support
 --sponsorblock-mark all      # Mark all sponsor segments for removal
 --sponsorblock-remove sponsor,outro # Remove all sponsor segments
+
