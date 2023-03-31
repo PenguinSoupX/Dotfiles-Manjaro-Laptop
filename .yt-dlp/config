@@ -7,7 +7,7 @@
 # Download the best 720p video
 -f 'bestvideo[height<=720]+bestaudio/best'
 
-# Set output file format to mp4
+# Set output file format to mkv
 --merge-output-format mkv
 
 # Download subtitles and embed them in the video
