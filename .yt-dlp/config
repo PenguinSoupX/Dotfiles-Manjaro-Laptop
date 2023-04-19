@@ -21,9 +21,10 @@
 --continue
 
 # Add metadata to downloaded files
---embed-metadata      # Embed metadata information
---embed-thumbnail    # Embed thumbnail image
---embed-chapters       # Embed chapter information
+--embed-metadata                # Embed metadata information
+--embed-thumbnail               # Embed thumbnail image
+--convert-thumbnails jpg     # Convert the thumbnail downloaded to jpg.This is done because mkv files wont show thumbnail when the format of thumbnail used is webp which is usually downloaded as default from youtube unlike mp4 which accepts webp.
+--embed-chapters                 # Embed chapter information
 
 # Set user-agent to avoid detection
 # --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
