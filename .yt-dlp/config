@@ -1,11 +1,11 @@
 # Output directory for downloaded files
--o ~/Downloads/yt-dlp/%(title)s.%(ext)s
+-o ~/Downloads/yt-dlp/"%(title)s - %(channel)s.%(ext)s"
 
 # Set default video format to best
-# -f best
+# -f "bestvideo*+bestaudio/best"
 
 # Download the best 720p video
--f 'bestvideo[height<=720]+bestaudio/best'
+ -f 'bestvideo[height<=720]+bestaudio/best'
 
 # Set output file format to mkv
 --merge-output-format mkv
