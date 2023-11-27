@@ -5,16 +5,22 @@
 # -f "bestvideo*+bestaudio/best"
 
 # Download the best 720p video
- -f 'bestvideo[height<=720]+bestaudio/best'
+# -f 'bestvideo[height<=720]+bestaudio/best'
+
+# Download the best 1080p video
+ -f 'bestvideo[height<=1080]+bestaudio/best'
 
 # Set output file format to mkv
 --merge-output-format mkv
 
+# Force keyframes at cuts when downloading/splitting/removing sections.This is an option only needed in VLC; MPV seems to be fine without this setting.
+#--force-keyframes-at-cuts       # This is slow due to needing a re-encode, but the resulting video may have fewer artifacts; Also the file sizes are much larger so use this only when absolutely necessary.
+
 # Download subtitles and embed them in the video
 --embed-subs
 
-# Set default language for subtitles to English
---sub-lang en
+# Set languages for subtitles
+--sub-langs "en.*,ja,ko"
 
 # Ignore errors and continue downloads if possible
 --ignore-errors
