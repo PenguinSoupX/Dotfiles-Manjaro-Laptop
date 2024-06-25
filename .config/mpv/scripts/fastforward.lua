@@ -2,13 +2,13 @@
 --
 -- Skipping forward by five seconds can be jarring.
 --
--- This script allows you to tap or hold the RIGHT key to speed up video,
--- the faster you tap RIGHT the faster the video will play.  After 2.5
+-- This script allows you to tap or hold the UP key to speed up video,
+-- the faster you tap UP the faster the video will play.  After 2.5
 -- seconds the playback speed will begin to decay back to 1x speed.
 local decay_delay = .05 -- rate of time by which playback speed is decreased
 local speed_increments = .4 -- amount by which playback speed is increased each time
 local speed_decrements = .4 -- amount by which playback speed is decreased each time
-local max_rate = 3 -- will not exceed this rate
+local max_rate = 5 -- will not exceed this rate
 local inertial_decay = false -- changes the behavior of speed decay
 
 
@@ -59,4 +59,4 @@ local function fastforward_handle(table)
     end
 end
 
-mp.add_forced_key_binding("RIGHT", "fastforward", fastforward_handle, {complex=not inertial_decay, repeatable=inertial_decay})
+mp.add_forced_key_binding("UP", "fastforward", fastforward_handle, {complex=not inertial_decay, repeatable=inertial_decay})
