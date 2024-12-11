@@ -11,7 +11,7 @@ To use these dot files on your own machine, follow these steps:
 1.  Clone this repository to your home directory:
 
 
-    `git clone https://github.com/PenguinSoupX/Dotfiles-Manjaro-Laptop.git ~/dotfiles`
+    `git clone https://github.com/PenguinSoupX/Dotfiles-Laptop.git ~/dotfiles`
 
 2.  Copy the contents of the `dotfiles` directory to your home directory:
 
